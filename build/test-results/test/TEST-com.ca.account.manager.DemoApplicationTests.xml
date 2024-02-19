@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ca.account.manager.DemoApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-19T15:05:24" hostname="IBE-LT161090" time="0.429">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.ca.account.manager.DemoApplicationTests" time="0.429"/>
+  <system-out><![CDATA[16:05:20.540 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [DemoApplicationTests]: using SpringBootContextLoader
+16:05:20.546 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.ca.account.manager.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:05:20.546 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ca.account.manager.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:05:20.566 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [DemoApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+16:05:20.626 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Mahesh\Accountancy-Manager-Workspace\build\classes\java\main\com\ca\account\manager\CAAccountancyManager.class]
+16:05:20.628 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ca.account.manager.CAAccountancyManager for test class com.ca.account.manager.DemoApplicationTests
+16:05:20.723 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [DemoApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+16:05:20.725 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [DemoApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2024-02-19T16:05:20.984+01:00  INFO 9704 --- [    Test worker] c.c.a.manager.DemoApplicationTests       : Starting DemoApplicationTests using Java 17.0.5 with PID 9704 (started by Mahesh.Sirikonda in C:\Mahesh\Accountancy-Manager-Workspace)
+2024-02-19T16:05:20.986+01:00  INFO 9704 --- [    Test worker] c.c.a.manager.DemoApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T16:05:21.567+01:00  INFO 9704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T16:05:21.628+01:00  INFO 9704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2024-02-19T16:05:22.028+01:00  INFO 9704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T16:05:22.204+01:00  INFO 9704 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-02-19T16:05:22.206+01:00  INFO 9704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T16:05:22.248+01:00  INFO 9704 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T16:05:22.302+01:00  INFO 9704 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2024-02-19T16:05:22.597+01:00  INFO 9704 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-02-19T16:05:23.206+01:00  INFO 9704 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-19T16:05:23.214+01:00  INFO 9704 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T16:05:23.444+01:00  WARN 9704 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T16:05:23.816+01:00  INFO 9704 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4889fbba, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6018d82c, org.springframework.security.web.context.SecurityContextHolderFilter@608c7b5b, org.springframework.security.web.header.HeaderWriterFilter@5c13534a, org.springframework.security.web.csrf.CsrfFilter@3fc4038f, org.springframework.security.web.authentication.logout.LogoutFilter@3e0a112f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a7b5925, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17d45cfb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10f192d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@572db5ee, org.springframework.security.web.access.ExceptionTranslationFilter@3b11deb6, org.springframework.security.web.access.intercept.AuthorizationFilter@16e84d93]
+2024-02-19T16:05:24.061+01:00  INFO 9704 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-02-19T16:05:24.114+01:00  INFO 9704 --- [    Test worker] c.c.a.manager.DemoApplicationTests       : Started DemoApplicationTests in 3.341 seconds (process running for 4.399)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
