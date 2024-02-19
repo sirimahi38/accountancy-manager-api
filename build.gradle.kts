@@ -1,6 +1,5 @@
 plugins {
     java
-    id("org.springframework.boot") version "3.0.5"
     id("io.spring.dependency-management") version "1.1.0"
 }
 
@@ -8,10 +7,15 @@ group = "com.ca.account.manager"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
-repositories {
-    mavenCentral()
+allprojects{
+    repositories {
+        mavenCentral()
+        google()
+        maven {
+            url = uri("https://plugins.gradle.org/m2/")
+        }
+    }
 }
-
 
 sourceSets {
     create("integration-test") {
@@ -20,7 +24,7 @@ sourceSets {
     }
 }
 
-val integrationTestImplementation by configurations.getting {
+val integrationTestImplementation: Configuration by configurations.getting {
     extendsFrom(configurations.implementation.get())
 }
 
@@ -31,36 +35,55 @@ configurations {
     }
 }
 
-dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-security")
+subprojects {
 
-    implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
+    apply(plugin = "io.spring.dependency-management")
+    apply(plugin = "java")
 
-    annotationProcessor("org.springframework.boot:spring-boot-starter-data-jpa")
-    compileOnly("org.projectlombok:lombok")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
-    runtimeOnly("com.h2database:h2")
-    annotationProcessor("org.projectlombok:lombok")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    dependencies {
+        implementation("org.slf4j:slf4j-api")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
-    testImplementation("junit:junit")
-    testImplementation("org.assertj:assertj-core")
-    testImplementation("org.mockito:mockito-inline")
-    testImplementation("org.springframework:spring-test")
-    testImplementation("org.glassfish:jakarta.el:4.0.2")
+        //Security
+        implementation("org.springframework.boot:spring-boot-starter-security")
 
-    integrationTestImplementation("junit:junit")
-    integrationTestImplementation("io.rest-assured:rest-assured:5.2.1")
-    integrationTestImplementation("org.springframework.boot:spring-boot-starter-test")
+        annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
+        compileOnly("org.projectlombok:lombok")
+        annotationProcessor("org.projectlombok:lombok")
 
-    testRuntimeOnly("org.glassfish:jakarta.el:4.0.2")
+        //AOP
+        implementation("org.springframework.boot:spring-boot-starter-aop")
+
+        //common
+        implementation("commons-io:commons-io:2.11.0")
+        implementation("org.apache.commons:commons-lang3:3.12.0")
+        implementation("com.google.guava:guava:23.0")
+
+        testImplementation("org.springframework.boot:spring-boot-starter-test")
+        testImplementation("com.github.tomakehurst:wiremock:3.0.0-beta-8")
+        testImplementation("org.assertj:assertj-core")
+        testImplementation("org.mockito:mockito-inline")
+        testImplementation("org.mockito:mockito-core:5.3.1")
+        testImplementation("org.mockito:mockito-junit-jupiter:5.3.1")
+        testImplementation("org.springframework.boot:spring-boot-starter-web")
+        implementation("org.springframework.security:spring-security-test")
+
+        //API Documentation
+        implementation("io.swagger:swagger-annotations:1.6.10")
+        implementation("io.swagger.core.v3:swagger-annotations:2.2.8")
+
+        //Fixtures
+        testImplementation("com.github.javafaker:javafaker:1.0.2")
+
+        //Test containers
+        testImplementation("org.testcontainers:postgresql:1.18.1")
+        testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.2")
+        testImplementation("org.testcontainers:junit-jupiter:1.18.1")
+        testImplementation("org.testcontainers:testcontainers-bom:1.18.1")
+    }
+
+    tasks.withType<JavaCompile> {
+        sourceCompatibility = "17"
+        targetCompatibility = "17"
+    }
 
 }
-
-tasks.withType<Test> {
-    useJUnitPlatform()
-}
-
