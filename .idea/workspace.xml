@@ -5,86 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/billing/accountancy-manager.billing.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/common/accountancy-manager.common.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/core/accountancy-manager.core.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/payments/accountancy-manager.payments.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/reports/accountancy-manager.reports.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/security/accountancy-manager.security.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/tasks/accountancy-manager.tasks.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/build/classes/java/main/com/ca/account/manager/billing/BillingConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/build/libs/billing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing/src/main/java/com/ca/account/manager/billing/BillingConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/build/classes/java/main/com/ca/account/manager/common/CommonConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/build/libs/common.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/CommonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/ca/account/manager/CAAccountancyManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/ca/account/manager/CoreConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/libs/accountancy-manager-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/libs/core-plain.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/resolvedMainClassName" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/resources/main/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CoreConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payments/build/classes/java/main/com/ca/account/manager/payments/PaymentsConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payments/build/libs/payments.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payments/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payments/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payments/src/main/java/com/ca/account/manager/payments/PaymentsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/build/classes/java/main/com/ca/account/manager/reports/ReportsConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/build/libs/reports.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reports/src/main/java/com/ca/account/manager/reports/ReportsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/build/classes/java/main/com/ca/account/manager/security/SecurityConf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/build/libs/security.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/ca/account/manager/security/SecurityConf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/build/classes/java/main/com/ca/account/manager/tasks/TasksConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/build/libs/tasks.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/TasksConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/domain/EmployeeTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/billing/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/MvcConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payments/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/payments/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/reports/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/security/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +36,12 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/tasks">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/common">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -109,12 +49,37 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="accountancy-manager" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,32 +91,43 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2coYtx2ZnvHp4SPx9SZLHWnYwwY" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Accountancy-Manager-Workspace.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Mahesh/Java-workspace/programming-practice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Accountancy-Manager-Workspace [bootRun].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace [build].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace [clean].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace:common [build].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace:tasks [build].executor": "Run",
+    "Gradle.Build Accountancy-Manager-Workspace.executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Mahesh/Accountancy-Manager-Workspace/tasks/src/main/java/com/ca/account/manager/tasks",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ca.account.manager.common.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Mahesh\Accountancy-Manager-Workspace\tasks\src\main\java\com\ca\account\manager\tasks" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.Accountancy-Manager-Workspace [clean]">
     <configuration name="Accountancy-Manager-Workspace [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -219,6 +195,50 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Accountancy-Manager-Workspace:common [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/common" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Accountancy-Manager-Workspace:tasks [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/tasks" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Accountancy-Manager-Workspace" />
       <method v="2">
@@ -237,6 +257,8 @@
         <item itemvalue="Gradle.Accountancy-Manager-Workspace [clean]" />
         <item itemvalue="Gradle.Accountancy-Manager-Workspace [bootRun]" />
         <item itemvalue="Gradle.Accountancy-Manager-Workspace [build]" />
+        <item itemvalue="Gradle.Accountancy-Manager-Workspace:tasks [build]" />
+        <item itemvalue="Gradle.Accountancy-Manager-Workspace:common [build]" />
       </list>
     </recent_temporary>
   </component>
