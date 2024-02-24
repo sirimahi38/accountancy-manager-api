@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/billing/accountancy-manager.billing.main.iml" filepath="$PROJECT_DIR$/.idea/modules/billing/accountancy-manager.billing.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/accountancy-manager.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/accountancy-manager.common.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/accountancy-manager.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/accountancy-manager.core.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/payments/accountancy-manager.payments.main.iml" filepath="$PROJECT_DIR$/.idea/modules/payments/accountancy-manager.payments.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/reports/accountancy-manager.reports.main.iml" filepath="$PROJECT_DIR$/.idea/modules/reports/accountancy-manager.reports.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/security/accountancy-manager.security.main.iml" filepath="$PROJECT_DIR$/.idea/modules/security/accountancy-manager.security.main.iml" />
