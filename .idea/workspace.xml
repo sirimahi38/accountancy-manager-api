@@ -152,7 +152,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Accountancy-Manager-Workspace [bootRun]">
+  <component name="RunManager" selected="Gradle.Accountancy-Manager-Workspace [clean]">
     <configuration name="Accountancy-Manager-Workspace [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -234,9 +234,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Accountancy-Manager-Workspace [clean]" />
         <item itemvalue="Gradle.Accountancy-Manager-Workspace [bootRun]" />
         <item itemvalue="Gradle.Accountancy-Manager-Workspace [build]" />
-        <item itemvalue="Gradle.Accountancy-Manager-Workspace [clean]" />
       </list>
     </recent_temporary>
   </component>
