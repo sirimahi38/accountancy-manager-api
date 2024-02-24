@@ -8,6 +8,7 @@ version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 allprojects{
+    apply(plugin = "io.spring.dependency-management")
     repositories {
         mavenCentral()
         google()
@@ -40,45 +41,28 @@ subprojects {
     apply(plugin = "io.spring.dependency-management")
     apply(plugin = "java")
 
+
     dependencies {
         implementation("org.slf4j:slf4j-api")
-
-        //Security
-        implementation("org.springframework.boot:spring-boot-starter-security")
 
         annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
         compileOnly("org.projectlombok:lombok")
         annotationProcessor("org.projectlombok:lombok")
-
-        //AOP
-        implementation("org.springframework.boot:spring-boot-starter-aop")
-
-        //common
-        implementation("commons-io:commons-io:2.11.0")
-        implementation("org.apache.commons:commons-lang3:3.12.0")
-        implementation("com.google.guava:guava:23.0")
-
-        testImplementation("org.springframework.boot:spring-boot-starter-test")
-        testImplementation("com.github.tomakehurst:wiremock:3.0.0-beta-8")
-        testImplementation("org.assertj:assertj-core")
-        testImplementation("org.mockito:mockito-inline")
-        testImplementation("org.mockito:mockito-core:5.3.1")
-        testImplementation("org.mockito:mockito-junit-jupiter:5.3.1")
-        testImplementation("org.springframework.boot:spring-boot-starter-web")
-        implementation("org.springframework.security:spring-security-test")
 
         //API Documentation
         implementation("io.swagger:swagger-annotations:1.6.10")
         implementation("io.swagger.core.v3:swagger-annotations:2.2.8")
 
         //Fixtures
-        testImplementation("com.github.javafaker:javafaker:1.0.2")
+        testImplementation("org.springframework.boot:spring-boot-starter-web")
+        implementation("org.springframework.security:spring-security-test")
 
-        //Test containers
-        testImplementation("org.testcontainers:postgresql:1.18.1")
-        testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.2")
-        testImplementation("org.testcontainers:junit-jupiter:1.18.1")
-        testImplementation("org.testcontainers:testcontainers-bom:1.18.1")
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom("org.springframework.boot:spring-boot-dependencies:3.2.2")
+        }
     }
 
     tasks.withType<JavaCompile> {
