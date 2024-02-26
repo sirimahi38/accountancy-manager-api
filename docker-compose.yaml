@@ -1,0 +1,48 @@
+version: '3.7'
+
+services:
+  app:
+    image: docker.io/library/core:latest
+    build:
+      context: .
+    container_name: accountancy-manager-api
+    depends_on:
+      - postgresql
+    ports:
+      - "8080:8080"
+    environment:
+      - POSTGRES_USER="postgres"
+      - POSTGRES_PASSWORD="postgres"
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+
+  postgresql:
+    image: postgres
+    container_name: postgresql
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

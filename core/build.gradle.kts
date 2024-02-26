@@ -14,7 +14,6 @@ springBoot {
     mainClass.set("com.ca.account.manager.CAAccountancyManager")
 }
 
-
 tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
     this.mainClass.set("com.ca.account.manager.CAAccountancyManager")
     this.archiveFileName.set("accountancy-manager-0.0.1-SNAPSHOT.jar")

@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/domain/EmployeeTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" afterDir="false" />
+    <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="database call integrated">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/dto/EmployeeTaskDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,9 +15,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CoreConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CoreConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +55,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="accountancy-manager" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -100,13 +96,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.accountancy-manager.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Accountancy-Manager-Workspace [bootBuildImage].executor": "Run",
     "Gradle.Accountancy-Manager-Workspace [bootRun].executor": "Run",
     "Gradle.Accountancy-Manager-Workspace [build].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace [classes].executor": "Run",
     "Gradle.Accountancy-Manager-Workspace [clean].executor": "Run",
     "Gradle.Accountancy-Manager-Workspace:common [build].executor": "Run",
     "Gradle.Accountancy-Manager-Workspace:tasks [build].executor": "Run",
     "Gradle.Build Accountancy-Manager-Workspace.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.Load Gradle Dependencies.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -114,21 +114,46 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Mahesh/Accountancy-Manager-Workspace/tasks/src/main/java/com/ca/account/manager/tasks",
+    "last_opened_file_path": "C:/Mahesh/Accountancy-Manager-Workspace/docker-compose.yaml",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ca.account.manager.tasks.dto" />
       <recent name="com.ca.account.manager.common.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Mahesh\Accountancy-Manager-Workspace" />
       <recent name="C:\Mahesh\Accountancy-Manager-Workspace\tasks\src\main\java\com\ca\account\manager\tasks" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Accountancy-Manager-Workspace [clean]">
+    <configuration name="Accountancy-Manager-Workspace [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootBuildImage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Accountancy-Manager-Workspace [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,6 +198,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Accountancy-Manager-Workspace [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Accountancy-Manager-Workspace [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -185,50 +232,6 @@
         <option name="taskNames">
           <list>
             <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Accountancy-Manager-Workspace:common [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/common" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Accountancy-Manager-Workspace:tasks [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/tasks" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -252,13 +255,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="accountancy-manager" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.accountancy-manager" />
+      <item itemvalue="Gradle.Accountancy-Manager-Workspace [classes]" />
+      <item itemvalue="Gradle.Accountancy-Manager-Workspace [bootBuildImage]" />
+      <item itemvalue="Gradle.Accountancy-Manager-Workspace [bootRun]" />
+      <item itemvalue="Gradle.Accountancy-Manager-Workspace [build]" />
+      <item itemvalue="Gradle.Accountancy-Manager-Workspace [clean]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Accountancy-Manager-Workspace [clean]" />
-        <item itemvalue="Gradle.Accountancy-Manager-Workspace [bootRun]" />
+        <item itemvalue="Gradle.Accountancy-Manager-Workspace [bootBuildImage]" />
         <item itemvalue="Gradle.Accountancy-Manager-Workspace [build]" />
-        <item itemvalue="Gradle.Accountancy-Manager-Workspace:tasks [build]" />
-        <item itemvalue="Gradle.Accountancy-Manager-Workspace:common [build]" />
+        <item itemvalue="Gradle.Accountancy-Manager-Workspace [classes]" />
+        <item itemvalue="Gradle.Accountancy-Manager-Workspace [bootRun]" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +291,27 @@
       <option name="presentableId" value="Default" />
       <updated>1708779616753</updated>
     </task>
+    <task id="LOCAL-00001" summary="database call integrated">
+      <option name="closed" value="true" />
+      <created>1708782672539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708782672539</updated>
+    </task>
+    <task id="LOCAL-00002" summary="database call integrated">
+      <option name="closed" value="true" />
+      <created>1708782686200</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708782686200</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="database call integrated" />
+    <option name="LAST_COMMIT_MESSAGE" value="database call integrated" />
   </component>
 </project>
