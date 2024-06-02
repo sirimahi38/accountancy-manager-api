@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ListTasksComponent from './components/ListTasksComponent'
-
+// import Home from './components/Home';
 function App() {
   return (
     <div>
@@ -10,7 +10,7 @@ function App() {
           <h1>Accountancy Manager</h1>
           <ListTasksComponent/>
         </p>
-
+          {/*<Home />*/}
     </div>
   );
 }
