@@ -1,6 +1,7 @@
 
 import './App.css';
 import ListTasksComponent from './components/ListTasksComponent';
+import Home from "./components/Home";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
             <p>
 
                 <h1>Accountancy Manager details</h1>
+                <Home/>
                 <ListTasksComponent/>
 
             </p>

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http//localhost:3000")
 @RestController
 @RequestMapping("/tasks")
 public class TaskController {
@@ -40,5 +41,10 @@ public class TaskController {
         taskService.createTask(modelMapper.map(employeeTaskDto, EmployeeTask.class));
     }
 
+    @CrossOrigin(origins = "http//localhost:3000")
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value="name", defaultValue = "springboot") String name){
+        return String.format( "Hello %s", name);
+    }
 
 }
