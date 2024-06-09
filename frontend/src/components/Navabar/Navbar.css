@@ -1,0 +1,20 @@
+ul#horizontal-list {
+    width: 150%;
+    list-style-type:none;
+    margin:auto;
+    padding:5px;
+    position:relative;
+    left:50%;
+    text-align: center;
+    list-style: inside;
+    display: flex;
+    justify-content: space-between;
+
+}
+ul#horizontal-list li {
+
+    color: #000;
+    padding: 8px 16px;
+    font-size: 20px;
+
+}

@@ -26,11 +26,16 @@ function ListTasksComponent(){
             }
     ]
     return (
-        <div className='container'>
-        <h2>Empoyee Tasks</h2>
-        <table className='table table-stripped table-bordered'>
-            <thead>
-                <tr>
+        <div className="employee-tasks"
+             style={{backgroundColor: "#09BCA9 "}}
+        >
+
+
+
+    <h2>Empoyee Tasks</h2>
+    <table className='table table-stripped table-bordered'>
+        <thead>
+        <tr>
                     <th>Task Id</th>
                     <th>Task Group</th>
                     <th>Task Name </th>
@@ -65,4 +70,4 @@ function ListTasksComponent(){
     )
 }
 
-export default ListTasksComponent
+export default ListTasksComponent;
