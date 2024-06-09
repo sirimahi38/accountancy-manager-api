@@ -1,9 +1,5 @@
 
 import './App.css';
-
-
-
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/HomePage";
 import Navbar from "./components/Navabar/Navbars";
@@ -14,8 +10,7 @@ import HomePage from "./components/HomePage";
 function App() {
     return (
         <>
-
-<Navbar />
+            <Navbar />
 
             <Router>
 
