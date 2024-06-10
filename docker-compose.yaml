@@ -39,11 +39,13 @@ services:
       KEYCLOAK_ADMIN_PASSWORD: admin
       KC_HOSTNAME_PATH: /auth
       KC_HTTP_RELATIVE_PATH: /auth
-    command: start-dev
+    command: start-dev --import-realm
     depends_on:
       - postgresql
     ports:
       - "8080:8080"
+    volumes:
+      - ./default-realm.json:/opt/keycloak/data/import/default-realm.json
 
   postgresql:
     image: postgres

@@ -1,0 +1,151 @@
+{
+  "realm":"accountant",
+  "enabled":true,
+  "requiredCredentials":[
+    "password"
+  ],
+  "users":[
+    {
+      "username":"superadmin@ac.com",
+      "firstName":"superadmin",
+      "lastName":"user",
+      "email":"superadmin@ac.com",
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"start123"
+        }
+      ],
+      "realmRoles":[
+        "admin"
+      ]
+    }
+  ],
+  "roles":{
+    "realm":[
+      {
+        "name":"user",
+        "description":"User privileges"
+      },
+      {
+        "name":"admin",
+        "description":"User Premium privileges"
+      }
+    ]
+  },
+  "clients":[
+    {
+      "clientId":"acc-authentication",
+      "enabled":true,
+      "baseUrl":"http://localhost:8080/acc-authentication",
+      "adminUrl":"http://localhost:8080/acc-authentication",
+      "bearerOnly":false,
+      "redirectUris":[
+        "http://localhost:8080/acc-authentication/*",
+        "http://127.0.0.1:8080/acc-authentication/*"
+      ],
+      "secret":"secret",
+      "authorizationServicesEnabled":true,
+      "directAccessGrantsEnabled":true,
+      "authorizationSettings":{
+        "resources":[
+          {
+            "name":"Protected Resource",
+            "uri":"/*",
+            "type":"http://acc-authentication/protected/resource",
+            "scopes":[
+              {
+                "name":"urn:acc-authentication:protected:resource:access"
+              }
+            ]
+          },
+          {
+            "name":"Premium Resource",
+            "uri":"/protected/premium/*",
+            "type":"urn:acc-authentication:protected:resource",
+            "scopes":[
+              {
+                "name":"urn:acc-authentication:protected:premium:access"
+              }
+            ]
+          }
+        ],
+        "policies":[
+          {
+            "name":"Any User Policy",
+            "description":"Defines that any user can do something",
+            "type":"role",
+            "logic":"POSITIVE",
+            "decisionStrategy":"UNANIMOUS",
+            "config":{
+              "roles":"[{\"id\":\"user\"}]"
+            }
+          },
+          {
+            "name":"Only Premium User Policy",
+            "description":"Defines that only premium users can do something",
+            "type":"role",
+            "logic":"POSITIVE",
+            "decisionStrategy":"UNANIMOUS",
+            "config":{
+              "roles":"[{\"id\":\"admin\"}]"
+            }
+          },
+          {
+            "name":"All Users Policy",
+            "description":"Defines that all users can do something",
+            "type":"aggregate",
+            "logic":"POSITIVE",
+            "decisionStrategy":"AFFIRMATIVE",
+            "config":{
+              "applyPolicies":"[\"Any User Policy\",\"Only Premium User Policy\"]"
+            }
+          },
+          {
+            "name":"Premium Resource Permission",
+            "description":"A policy that defines access to premium resources",
+            "type":"resource",
+            "logic":"POSITIVE",
+            "decisionStrategy":"UNANIMOUS",
+            "config":{
+              "resources":"[\"Premium Resource\"]",
+              "applyPolicies":"[\"Only Premium User Policy\"]"
+            }
+          },
+          {
+            "name":"Protected Resource Permission",
+            "description":"A policy that defines access to any protected resource",
+            "type":"resource",
+            "logic":"POSITIVE",
+            "decisionStrategy":"UNANIMOUS",
+            "config":{
+              "resources":"[\"Protected Resource\"]",
+              "applyPolicies":"[\"All Users Policy\"]"
+            }
+          }
+        ],
+        "scopes":[
+          {
+            "name":"urn:acc-authentication:protected:admin:access"
+          },
+          {
+            "name":"urn:acc-authentication:protected:resource:access"
+          },
+          {
+            "name":"urn:acc-authentication:protected:premium:access"
+          },
+          {
+            "name":"urn:acc-authentication:page:main:actionForPremiumUser"
+          },
+          {
+            "name":"urn:acc-authentication:page:main:actionForAdmin"
+          },
+          {
+            "name":"urn:acc-authentication:page:main:actionForUser"
+          }
+        ]
+      }
+    }
+  ]
+}
