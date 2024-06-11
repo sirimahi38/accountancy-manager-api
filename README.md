@@ -1,4 +1,4 @@
-z+# accountancy-manager-api
+# accountancy-manager-api
 ## Prerequisites
 
 - GIT
@@ -9,7 +9,7 @@ z+# accountancy-manager-api
 
 ### Running build
 
-## Clean 
+## Clean
 - Execute `gradlew clean`
 
 ## build image

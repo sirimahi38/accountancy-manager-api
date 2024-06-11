@@ -21,7 +21,7 @@ function HomePage() {
     return (
         <div>
             <h2>Employee Details:</h2>
-            {employees && <p>{employees}</p>}
+
 
         </div>
     );
