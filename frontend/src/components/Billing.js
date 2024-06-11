@@ -12,7 +12,7 @@ function Billing() {
             })
                 .then((response) => response.json())
                 .then((data) => {
-                    setTask(data[0].task);
+                    setTask(data);
                     console.log(data);
                 })
                 .catch((error) => console.log(error));

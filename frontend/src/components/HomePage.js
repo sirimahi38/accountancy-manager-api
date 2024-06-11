@@ -13,7 +13,7 @@ function HomePage() {
         })
             .then((response) => response.json())
             .then((data) => {
-                setEmployees(data[0].employees);
+                setEmployees(data);
                 console.log(data);
             })
             .catch((error) => console.log(error));
