@@ -1,31 +1,23 @@
-
-import React, { useState, useEffect } from "react";
-function Billing() {
-    const [task, setTask] = useState(null);
-        useEffect(() => {
-            fetch("http://localhost:8666/accountant/tasks", {
-                method: "GET",
-                headers: {
-                    "Content-type": "application/json"
-
-                },
+import { useState, useEffect } from 'react';
+const Billing = () => {
+    const [billDetails, setBillDetails] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:8666/accountant/billing/billdetails')
+            .then((res) => {
+                return res.json();
             })
-                .then((response) => response.json())
-                .then((data) => {
-                    setTask(data);
-                    console.log(data);
-                })
-                .catch((error) => console.log(error));
-        }, []);
+            .then((data) => {
+                console.log(data);
+                setBillDetails(data);
+            });
+    }, []);
     return (
         <div className="container"
              style={{backgroundColor: "#A9C8C5"}}>
-            <h1>Billing</h1>
-            {task && <p>{task}</p>}
+            <h1>Billing Details</h1>
+
+            {billDetails}
         </div>
-        );
-    }
-
-
-
+    );
+};
 export default Billing;
