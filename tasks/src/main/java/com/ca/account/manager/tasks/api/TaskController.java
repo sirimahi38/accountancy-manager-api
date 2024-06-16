@@ -22,7 +22,7 @@ public class TaskController {
         this.modelMapper = modelMapper;
     }
 
-    @GetMapping
+    @GetMapping("/employeeTasks")
     public List<EmployeeTask> rtrvTaskList() {
 
         return taskService.rtrvAllTasks();

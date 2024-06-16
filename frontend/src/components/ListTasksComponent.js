@@ -1,41 +1,27 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 function ListTasksComponent(){
-    const dummyData = [
-            {
-            "id":1,
-           "taskGroup":"Group1",
-           "taskName":"ITR",
-           "taskCheckList":"checkList",
-           "advanceIntimation":"",
-           "remarks":"check before approve",
-           "taskType":"M",
-           "taskAssignedTo":"Mahesh",
-           "taskStatus":"created"
-            },
-            {
-            "id":2,
-           "taskGroup":"Group1",
-           "taskName":"ITR",
-           "taskCheckList":"checkList",
-           "advanceIntimation":"",
-           "remarks":"check before approve",
-           "taskType":"M",
-           "taskAssignedTo":"Mahesh",
-           "taskStatus":"created"
-            }
-    ]
+    const [taskDetails, setTaskDetails] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:8666/accountant/tasks/employeeTasks')
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                console.log("data is loading ");
+                setTaskDetails(data);
+
+            });
+    }, []);
+
     return (
         <div className="employee-tasks"
              style={{backgroundColor: "#09BCA9 "}}
         >
-
-
-
-    <h2>Empoyee Tasks</h2>
-    <table className='table table-stripped table-bordered'>
-        <thead>
-        <tr>
+            <h2>Empoyee Tasks</h2>
+            <table className='table table-stripped table-bordered'>
+            <thead>
+            <tr>
                     <th>Task Id</th>
                     <th>Task Group</th>
                     <th>Task Name </th>
@@ -48,19 +34,18 @@ function ListTasksComponent(){
                 </tr>
             </thead>
             <tbody>
-            {
-                dummyData.map(task =>
-                 <tr key={task.id}>
-                    <td>{task.id}</td>
-                    <td>{task.taskGroup}</td>
-                    <td>{task.taskName}</td>
-                    <td>{task.taskCheckList}</td>
-                    <td>{task.advanceIntimation}</td>
-                    <td>{task.remarks}</td>
-                    <td>{task.taskType}</td>
-                    <td>{task.taskAssignedTo}</td>
-                    <td>{task.taskStatus}</td>
-                </tr>)
+            {taskDetails.map(employee => (
+                <tr key={employee.taskId}>
+                    <td>{employee.taskId}</td>
+                    <td>{employee.taskGroup}</td>
+                    <td>{employee.taskName}</td>
+                    <td>{employee.taskCheckList}</td>
+                    <td>{employee.advanceIntimation}</td>
+                    <td>{employee.remarks}</td>
+                    <td>{employee.taskType}</td>
+                    <td>{employee.taskAssignedTo}</td>
+                    <td>{employee.taskStatus}</td>
+                </tr>))
             }
 
             </tbody>
