@@ -18,19 +18,19 @@ function HomePage(){
         <div className="employee-tasks"
              style={{backgroundColor: "#09BCA9 "}}
         >
-            <h2>Empoyees</h2>
+            <h2>Admin User Details</h2>
             <table className='table table-stripped table-bordered'>
                 <thead>
                 <tr>
-                    <th>Task Id</th>
-                    <th>Task Group</th>
-                    <th>Task Name </th>
-                    <th>TaskCheckList</th>
-                    <th>AdvanceIntimation</th>
-                    <th>Remarks</th>
-                    <th>TaskType</th>
-                    <th>TaskAssignedTo</th>
-                    <th>TaskStatus</th>
+                    <th>User ID</th>
+                    <th>User Name</th>
+                    <th>User Role </th>
+                    <th>User Access status</th>
+                    <th>User Assign</th>
+                    <th>User Type</th>
+
+                    <th>UserAssignedTo</th>
+                    <th>UserStatus</th>
                 </tr>
                 </thead>
                 <tbody>

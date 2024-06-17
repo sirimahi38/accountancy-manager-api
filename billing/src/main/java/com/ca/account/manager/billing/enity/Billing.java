@@ -30,7 +30,7 @@ public class Billing {
     private String customer_billName;
 
     @Column(name = "desc_name")
-    private String billDescame;
+    private String billDescName;
 
 
 
