@@ -4,34 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="Oauth 2 integration">
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DatabaseProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantConnectionProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantIdentifierResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/domain/IndexDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/IndexDatabaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/service/IndexDatabaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/ca/account/manager/security/MeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/ca/account/manager/security/SecurityContextHolderUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+    <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="Oauth 2  + jenkins integration">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/CommonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/ca/account/manager/security/SecurityConfResourceServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/ca/account/manager/security/SecurityConfResourceServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +174,7 @@
       <recent name="com.ca.account.manager.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.accountancy-manager-api:tasks [test]">
+  <component name="RunManager" selected="Gradle.accountancy-manager-api [clean]">
     <configuration name="TaskControllerTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -267,10 +245,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="accountancy-manager-api:tasks [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="accountancy-manager-api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/tasks" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -278,7 +256,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="testClasses" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -339,15 +317,15 @@
       <item itemvalue="Gradle.TaskControllerTest.rtrvTask (1)" />
       <item itemvalue="Gradle.Tests in 'accountancy-manager.tasks.test'" />
       <item itemvalue="Gradle.accountancy-manager-api:tasks [test]" />
-      <item itemvalue="Gradle.accountancy-manager-api:tasks [testClasses]" />
+      <item itemvalue="Gradle.accountancy-manager-api [clean]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.accountancy-manager-api [clean]" />
         <item itemvalue="Gradle.accountancy-manager-api:tasks [test]" />
         <item itemvalue="Gradle.TaskControllerTest (1)" />
         <item itemvalue="Gradle.TaskControllerTest.rtrvTask (1)" />
         <item itemvalue="Gradle.Tests in 'accountancy-manager.tasks.test'" />
-        <item itemvalue="Gradle.accountancy-manager-api:tasks [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +394,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724256236052</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Oauth 2  + jenkins integration">
+      <option name="closed" value="true" />
+      <created>1725450076198</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725450076198</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Oauth 2  + jenkins integration">
+      <option name="closed" value="true" />
+      <created>1725450512891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725450512891</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -435,7 +429,8 @@
     <MESSAGE value="react js call integrated" />
     <MESSAGE value="keycloak integrated" />
     <MESSAGE value="Oauth 2 integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oauth 2 integration" />
+    <MESSAGE value="Oauth 2  + jenkins integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Oauth 2  + jenkins integration" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/accountancy_manager$Tests_in__accountancy_manager_tasks_test_.ic" NAME="Tests in 'accountancy-manager.tasks.test' Coverage Results" MODIFIED="1725115599145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

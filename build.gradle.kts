@@ -13,7 +13,7 @@ allprojects{
         mavenCentral()
         google()
         maven {
-            url = uri("https://plugins.gradle.org/m2/")
+            url = uri("https://maven.google.com")
         }
     }
 }
