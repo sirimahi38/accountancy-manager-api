@@ -58,6 +58,7 @@ subprojects {
 
         //Fixtures
         testImplementation("org.springframework.boot:spring-boot-starter-web")
+        testImplementation("org.springframework.boot:spring-boot-starter-test")
         implementation("org.springframework.security:spring-security-test")
 
     }

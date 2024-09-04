@@ -2,6 +2,8 @@ package com.ca.account.manager.tasks.service;
 
 
 import com.ca.account.manager.common.domain.EmployeeTask;
+import com.ca.account.manager.common.domain.IndexDatabase;
+import com.ca.account.manager.common.repos.IndexDatabaseRepository;
 import com.ca.account.manager.common.repos.TaskRepository;
 import org.springframework.stereotype.Component;
 
@@ -13,14 +15,17 @@ public class TaskService {
 
     private final TaskRepository taskRepository;
 
-    public TaskService(TaskRepository taskRepository) {
+    private final IndexDatabaseRepository indexDatabaseRepository;
+
+    public TaskService(TaskRepository taskRepository, IndexDatabaseRepository indexDatabaseRepository) {
         this.taskRepository = taskRepository;
+        this.indexDatabaseRepository = indexDatabaseRepository;
     }
 
-    public List<EmployeeTask> rtrvAllTasks(){
+    public List<IndexDatabase> rtrvAllTasks(){
 
-        return taskRepository.findAll();
-    }
+        return indexDatabaseRepository.findAll();
+ }
 
     public Optional<EmployeeTask> rtrvTask(Long taskId){
 

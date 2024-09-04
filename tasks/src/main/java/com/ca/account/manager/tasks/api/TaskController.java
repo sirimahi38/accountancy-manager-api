@@ -1,6 +1,7 @@
 package com.ca.account.manager.tasks.api;
 
 import com.ca.account.manager.common.domain.EmployeeTask;
+import com.ca.account.manager.common.domain.IndexDatabase;
 import com.ca.account.manager.tasks.dto.EmployeeTaskDto;
 import com.ca.account.manager.tasks.service.TaskService;
 import org.modelmapper.ModelMapper;
@@ -21,8 +22,14 @@ public class TaskController {
         this.modelMapper = modelMapper;
     }
 
+    @GetMapping("first")
+    public String rtrvMe() {
+
+        return "first";
+    }
+
     @GetMapping
-    public List<EmployeeTask> rtrvTaskList() {
+    public List<IndexDatabase> rtrvTaskList() {
 
         return taskService.rtrvAllTasks();
     }
