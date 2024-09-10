@@ -12,7 +12,7 @@ import java.util.function.Predicate;
 @Component
 public class TenantIdentifierResolver implements CurrentTenantIdentifierResolver {
 
-    static final String DEFAULT_TENANT = "";
+    static final String DEFAULT_TENANT = "66bcbd805157e4e36e0b0b51";
 
     @Override
     public String resolveCurrentTenantIdentifier() {
