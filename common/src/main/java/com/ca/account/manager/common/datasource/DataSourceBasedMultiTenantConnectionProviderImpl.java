@@ -21,8 +21,6 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
 
     private Map<String, DataSource> dataSourcesMtApp = new TreeMap<>();
 
-    boolean init = false;
-
     @Override
     protected DataSource selectAnyDataSource() {
         if (dataSourcesMtApp.isEmpty()) {

@@ -19,6 +19,7 @@ import com.ca.account.manager.common.repos.domain.IndexDatabase;
 import com.zaxxer.hikari.HikariDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
 
 import javax.sql.DataSource;
 
@@ -38,8 +39,8 @@ public final class DataSourceUtil {
         HikariDataSource ds = new HikariDataSource();
         ds.setUsername(masterTenant.getIdusername());
         ds.setPassword(masterTenant.getIdpassword());
-        ds.setJdbcUrl(masterTenant.getIdurl());
-        ds.setDriverClassName("com.mysql.jdbc.Driver");
+        ds.setJdbcUrl("jdbc:postgresql://localhost:5432/pulsewsc5a2fefc168142378135b3eb62366e6a");
+        ds.setDriverClassName("org.postgresql.Driver");
 
         // HikariCP settings - could come from the master_tenant table but
         // hardcoded here for brevity

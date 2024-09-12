@@ -5,38 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="Oauth 2  + jenkins integration">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DataSourceBasedMultiTenantConnectionProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/IndexDataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantDataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/interceptor/CurrentTenantIdentifierResolverImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/interceptor/RequestInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/interceptor/TenantContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/DataSourceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/PasswordScramblingTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/CommonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/CommonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DatabaseProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantConnectionProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantIdentifierResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantIdentifierResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/domain/IndexDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/domain/IndexDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/IndexDatabaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/IndexDatabaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/TaskRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/service/IndexDatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/service/IndexDatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DataSourceBasedMultiTenantConnectionProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DataSourceBasedMultiTenantConnectionProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/DataSourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/DataSourceUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,14 +116,14 @@
     "Gradle.GITHUB-CODEBASE [clean].executor": "Run",
     "Gradle.GITHUB-CODEBASE [jar].executor": "Run",
     "Gradle.Load Gradle Dependencies.executor": "Run",
-    "Gradle.TaskControllerTest (1).executor": "Run",
+    "Gradle.TaskControllerTest (1).executor": "Debug",
     "Gradle.TaskControllerTest.executor": "Run",
     "Gradle.TaskControllerTest.rtrvTask (1).executor": "Run",
     "Gradle.TaskControllerTest.rtrvTask.executor": "Run",
     "Gradle.Tests in 'accountancy-manager.tasks.test'.executor": "Run",
     "Gradle.accountancy-manager-api [bootRun].executor": "Debug",
     "Gradle.accountancy-manager-api [build].executor": "Run",
-    "Gradle.accountancy-manager-api [clean].executor": "Debug",
+    "Gradle.accountancy-manager-api [clean].executor": "Run",
     "Gradle.accountancy-manager-api:tasks [clean].executor": "Run",
     "Gradle.accountancy-manager-api:tasks [testClasses].executor": "Run",
     "Gradle.accountancy-manager-api:tasks [test].executor": "Run",
@@ -327,10 +307,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.accountancy-manager-api [bootRun]" />
-        <item itemvalue="Gradle.accountancy-manager-api [clean]" />
-        <item itemvalue="Gradle.accountancy-manager-api:tasks [test]" />
         <item itemvalue="Gradle.TaskControllerTest (1)" />
         <item itemvalue="Gradle.TaskControllerTest.rtrvTask (1)" />
+        <item itemvalue="Gradle.accountancy-manager-api [clean]" />
+        <item itemvalue="Gradle.accountancy-manager-api:tasks [test]" />
       </list>
     </recent_temporary>
   </component>

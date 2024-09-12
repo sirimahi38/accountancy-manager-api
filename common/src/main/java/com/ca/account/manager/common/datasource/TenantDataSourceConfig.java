@@ -36,7 +36,7 @@ public class TenantDataSourceConfig {
     private JpaProperties jpaProperties;
 
     @Bean(name = "multiTenantConnectionProvider")
-    @ConditionalOnBean(name = "tenantEntityManagerFactory")
+    @ConditionalOnBean(name = "indexEntityManagerFactory")
     public MultiTenantConnectionProvider multiTenantConnectionProvider() {
         return new DataSourceBasedMultiTenantConnectionProviderImpl();
     }
@@ -48,7 +48,7 @@ public class TenantDataSourceConfig {
 
     @Bean(name = "tenantEntityManagerFactory")
     @ConditionalOnBean(name = "multiTenantConnectionProvider")
-    public LocalContainerEntityManagerFactoryBean tenantEntityManagerFactoryFactory(@Qualifier("multiTenantConnectionProvider") MultiTenantConnectionProvider connectionProvider,
+    public LocalContainerEntityManagerFactoryBean tenantEntityManagerFactory(@Qualifier("multiTenantConnectionProvider") MultiTenantConnectionProvider connectionProvider,
             @Qualifier("currentTenantIdentifierResolver")CurrentTenantIdentifierResolver currentTenantIdentifierResolver) {
 
         LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
