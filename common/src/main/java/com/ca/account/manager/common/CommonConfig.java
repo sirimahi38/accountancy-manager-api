@@ -25,8 +25,8 @@ public class CommonConfig {
 
     @Bean(name="indexDataSource")
     public DataSource indexDataSource() {
-        return DataSourceBuilder.create().driverClassName("org.postgresql.Driver").url("jdbc:postgresql://localhost:5432/pulse")
-                .username("pulse").password("PulseP0werL0gin").type(HikariDataSource.class).build();
+        return DataSourceBuilder.create().driverClassName("org.postgresql.Driver").url("jdbc:postgresql://localhost:5433/pulse")
+                .username("postgres").password("postgres").type(HikariDataSource.class).build();
     }
 
 }

@@ -37,9 +37,9 @@ public final class DataSourceUtil {
     public static DataSource createAndConfigureDataSource(
             IndexDatabase masterTenant) {
         HikariDataSource ds = new HikariDataSource();
-        ds.setUsername(masterTenant.getIdusername());
-        ds.setPassword(masterTenant.getIdpassword());
-        ds.setJdbcUrl("jdbc:postgresql://localhost:5432/pulsewsc5a2fefc168142378135b3eb62366e6a");
+        ds.setUsername("postgres");
+        ds.setPassword("postgres");
+        ds.setJdbcUrl("jdbc:postgresql://localhost:5433/tenant1");
         ds.setDriverClassName("org.postgresql.Driver");
 
         // HikariCP settings - could come from the master_tenant table but
@@ -58,7 +58,7 @@ public final class DataSourceUtil {
         ds.setConnectionTimeout(20000);
 
         // Setting up a pool name for each tenant datasource
-        String tenantId = masterTenant.getIdschema();
+        String tenantId = "tenant1";
         String tenantConnectionPoolName = tenantId + "-connection-pool";
         ds.setPoolName(tenantConnectionPoolName);
         LOG.info("Configured datasource:" + masterTenant.getIdschema()

@@ -19,6 +19,12 @@ tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar
     this.archiveFileName.set("accountancy-manager-0.0.1-SNAPSHOT.jar")
 }
 
+
+tasks.test {
+    useJUnitPlatform()
+    maxParallelForks = 1
+}
+
 dependencies {
     implementation(project(":common"))
     implementation(project(":billing"))

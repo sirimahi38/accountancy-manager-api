@@ -1,12 +1,11 @@
 package com.ca.account.manager.common.datasource;
 
-import com.ca.account.manager.common.domain.EmployeeTask;
+import com.ca.account.manager.common.EmployeeTask;
 import com.ca.account.manager.common.interceptor.CurrentTenantIdentifierResolverImpl;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.cfg.Environment;
 import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
@@ -32,9 +31,6 @@ import java.util.Map;
 @Configuration
 public class TenantDataSourceConfig {
 
-    @Autowired
-    private JpaProperties jpaProperties;
-
     @Bean(name = "multiTenantConnectionProvider")
     @ConditionalOnBean(name = "indexEntityManagerFactory")
     public MultiTenantConnectionProvider multiTenantConnectionProvider() {
@@ -54,7 +50,7 @@ public class TenantDataSourceConfig {
         LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         localContainerEntityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         localContainerEntityManagerFactoryBean.setPersistenceUnitName("tenantDB-");
-        Map<String, Object> jpaPropertiesMap = new HashMap<>(jpaProperties.getProperties());
+        Map<String, Object> jpaPropertiesMap = new HashMap<>(new JpaProperties().getProperties());
         jpaPropertiesMap.put(Environment.MULTI_TENANT_CONNECTION_PROVIDER, connectionProvider);
         jpaPropertiesMap.put(Environment.MULTI_TENANT_IDENTIFIER_RESOLVER, currentTenantIdentifierResolver);
         jpaPropertiesMap.put(Environment.SHOW_SQL, true);

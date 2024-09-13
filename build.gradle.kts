@@ -63,11 +63,16 @@ subprojects {
         testImplementation("org.springframework.boot:spring-boot-starter-test")
         implementation("org.springframework.security:spring-security-test")
 
+        testImplementation("org.testcontainers:testcontainers")
+        testImplementation("org.testcontainers:junit-jupiter")
+        testImplementation("org.testcontainers:postgresql")
+
     }
 
     dependencyManagement {
         imports {
             mavenBom("org.springframework.boot:spring-boot-dependencies:3.2.2")
+            mavenBom( "org.testcontainers:testcontainers-bom:1.20.1")
         }
     }
 

@@ -18,11 +18,14 @@ import java.util.Optional;
 
 @Component
 public class IndexDatabaseService implements ApplicationContextAware, InitializingBean {
-    @Autowired
     private IndexDatabaseRepository indexDatabaseRepository;
 
     private HashMap<String, DataSource> dataSources = new HashMap<>();
     private ApplicationContext applicationContext;
+
+    public IndexDatabaseService(IndexDatabaseRepository indexDatabaseRepository) {
+        this.indexDatabaseRepository = indexDatabaseRepository;
+    }
 
     public List<IndexDatabase> rtrvAllIndexDatabases(){
 

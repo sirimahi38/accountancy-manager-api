@@ -1,4 +1,4 @@
-package com.ca.account.manager.common.domain;
+package com.ca.account.manager.common;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

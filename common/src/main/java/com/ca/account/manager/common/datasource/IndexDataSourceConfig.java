@@ -1,11 +1,10 @@
 package com.ca.account.manager.common.datasource;
 
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
 import com.ca.account.manager.common.repos.IndexDatabaseRepository;
+import com.ca.account.manager.common.repos.domain.IndexDatabase;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.jpa.HibernatePersistenceProvider;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.context.annotation.Bean;
@@ -32,8 +31,6 @@ public class IndexDataSourceConfig {
 
     private DataSource indexDataSource;
 
-    @Autowired
-    private JpaProperties jpaProperties;
 
     public IndexDataSourceConfig(DataSource indexDataSource) {
         this.indexDataSource = indexDataSource;
@@ -43,7 +40,7 @@ public class IndexDataSourceConfig {
     @Primary
     public LocalContainerEntityManagerFactoryBean indexEntityManagerFactory() {
        
-        Map<String, Object> jpaPropertiesMap = new HashMap<>(jpaProperties.getProperties());
+        Map<String, Object> jpaPropertiesMap = new HashMap<>(new JpaProperties().getProperties());
         jpaPropertiesMap.put(AvailableSettings.FORMAT_SQL, true);
         jpaPropertiesMap.put(AvailableSettings.SHOW_SQL, true);
 
