@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="Oauth 2  + jenkins integration">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="multi tenant connection pool integration">
+      <change afterPath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/BaseIndexDatabaseRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/BaseTenantDatabaseRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/PostgreSQLContainerInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DataSourceBasedMultiTenantConnectionProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DataSourceBasedMultiTenantConnectionProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/TenantDataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/DataSourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/DataSourceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/CommonAdapterTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/CommonAdapterTestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/BaseRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/IndexDatabaseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/IndexDatabaseRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TasksAdapterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/TasksAdapterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TasksAdapterTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/TasksAdapterTestConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +61,11 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -74,8 +76,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -115,11 +117,19 @@
     "Gradle.GITHUB-CODEBASE [bootJar].executor": "Run",
     "Gradle.GITHUB-CODEBASE [clean].executor": "Run",
     "Gradle.GITHUB-CODEBASE [jar].executor": "Run",
+    "Gradle.IndexDatabaseRepositoryTest (1).executor": "Run",
+    "Gradle.IndexDatabaseRepositoryTest.executor": "Run",
+    "Gradle.IndexDatabaseRepositoryTest.testFindAll.executor": "Debug",
+    "Gradle.IndexDatabaseServiceTest (1).executor": "Run",
+    "Gradle.IndexDatabaseServiceTest.executor": "Run",
+    "Gradle.IndexDatabaseServiceTest.testCreateIndexDataSourceForGivenName.executor": "Run",
+    "Gradle.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration.executor": "Run",
     "Gradle.Load Gradle Dependencies.executor": "Run",
-    "Gradle.TaskControllerTest (1).executor": "Debug",
+    "Gradle.TaskControllerTest (1).executor": "Run",
     "Gradle.TaskControllerTest.executor": "Run",
     "Gradle.TaskControllerTest.rtrvTask (1).executor": "Run",
     "Gradle.TaskControllerTest.rtrvTask.executor": "Run",
+    "Gradle.TaskControllerTest.rtrvTaskList.executor": "Debug",
     "Gradle.Tests in 'accountancy-manager.tasks.test'.executor": "Run",
     "Gradle.accountancy-manager-api [bootRun].executor": "Debug",
     "Gradle.accountancy-manager-api [build].executor": "Run",
@@ -134,8 +144,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/tasks/src/test/java",
-    "last_opened_file_path": "C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/common/src/main/java/com/ca/account/manager/common",
+    "last_directory_selection": "C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/tasks/src/test/java/com/ca/account/manager/tasks",
+    "last_opened_file_path": "C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/common/src/test/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.09993248",
     "project.structure.side.proportion": "0.3521021",
@@ -144,23 +154,98 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ca.account.manager.tasks.dto" />
       <recent name="com.ca.account.manager.common.domain" />
+      <recent name="com.ca.account.manager.tasks.api" />
+      <recent name="com.ca.account.manager.tasks.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Mahesh\accountancy-managerbkp\accountancy-manager-api\common\src\test\resources" />
+      <recent name="C:\Mahesh\accountancy-managerbkp\accountancy-manager-api\tasks\src\test\java\com\ca\account\manager\tasks\api\persistence" />
+      <recent name="C:\Mahesh\accountancy-managerbkp\accountancy-manager-api\tasks\src\test\resources" />
       <recent name="C:\Mahesh\accountancy-managerbkp\accountancy-manager-api\common\src\main\java\com\ca\account\manager\common" />
       <recent name="C:\Users\Mahesh.Sirikonda\source\GITHUB-CODEBASE\core\src\main\resources" />
-      <recent name="C:\Mahesh\Accountancy-Manager-Workspace" />
-      <recent name="C:\Mahesh\Accountancy-Manager-Workspace\tasks\src\main\java\com\ca\account\manager\tasks" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ca.account.manager.common.repos" />
       <recent name="com.ca.account.manager.common.utils" />
       <recent name="com.ca.account.manager.common.datasource" />
       <recent name="com.ca.account.manager.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.accountancy-manager-api [bootRun]">
-    <configuration name="TaskControllerTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.IndexDatabaseRepositoryTest.testFindAll">
+    <configuration name="IndexDatabaseRepositoryTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":common:test" />
+            <option value="--tests" />
+            <option value="&quot;com.ca.account.manager.common.repos.IndexDatabaseRepositoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="IndexDatabaseRepositoryTest.testFindAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":common:test" />
+            <option value="--tests" />
+            <option value="&quot;com.ca.account.manager.common.repos.IndexDatabaseRepositoryTest.testFindAll&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":common:test" />
+            <option value="--tests" />
+            <option value="&quot;com.ca.account.manager.common.service.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TaskControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,52 +269,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TaskControllerTest.rtrvTask (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":tasks:test" />
-            <option value="--tests" />
-            <option value="&quot;com.ca.account.manager.tasks.api.TaskControllerTest.rtrvTask&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="accountancy-manager-api [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="bootRun" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="accountancy-manager-api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -242,28 +281,6 @@
         <option name="taskNames">
           <list>
             <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="accountancy-manager-api:tasks [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/tasks" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -298,19 +315,19 @@
     </configuration>
     <list>
       <item itemvalue="Docker.accountancy-manager" />
-      <item itemvalue="Gradle.accountancy-manager-api [bootRun]" />
-      <item itemvalue="Gradle.TaskControllerTest (1)" />
-      <item itemvalue="Gradle.TaskControllerTest.rtrvTask (1)" />
-      <item itemvalue="Gradle.accountancy-manager-api:tasks [test]" />
+      <item itemvalue="Gradle.IndexDatabaseRepositoryTest (1)" />
+      <item itemvalue="Gradle.IndexDatabaseRepositoryTest.testFindAll" />
+      <item itemvalue="Gradle.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration" />
+      <item itemvalue="Gradle.TaskControllerTest" />
       <item itemvalue="Gradle.accountancy-manager-api [clean]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.accountancy-manager-api [bootRun]" />
-        <item itemvalue="Gradle.TaskControllerTest (1)" />
-        <item itemvalue="Gradle.TaskControllerTest.rtrvTask (1)" />
+        <item itemvalue="Gradle.IndexDatabaseRepositoryTest.testFindAll" />
+        <item itemvalue="Gradle.IndexDatabaseRepositoryTest (1)" />
         <item itemvalue="Gradle.accountancy-manager-api [clean]" />
-        <item itemvalue="Gradle.accountancy-manager-api:tasks [test]" />
+        <item itemvalue="Gradle.TaskControllerTest" />
+        <item itemvalue="Gradle.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration" />
       </list>
     </recent_temporary>
   </component>
@@ -403,7 +420,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725456941789</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="multi tenant connection pool integration">
+      <option name="closed" value="true" />
+      <created>1726146391972</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1726146391972</updated>
+    </task>
+    <task id="LOCAL-00012" summary="multi tenant connection pool integration">
+      <option name="closed" value="true" />
+      <created>1726245313886</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1726245313886</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,7 +456,29 @@
     <MESSAGE value="keycloak integrated" />
     <MESSAGE value="Oauth 2 integration" />
     <MESSAGE value="Oauth 2  + jenkins integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oauth 2  + jenkins integration" />
+    <MESSAGE value="multi tenant connection pool integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="multi tenant connection pool integration" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/service/IndexDatabaseServiceTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/IndexDatabaseRepositoryTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/accountancy_manager$Tests_in__accountancy_manager_tasks_test_.ic" NAME="Tests in 'accountancy-manager.tasks.test' Coverage Results" MODIFIED="1725115599145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

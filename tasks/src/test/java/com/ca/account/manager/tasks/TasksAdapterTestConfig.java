@@ -1,4 +1,4 @@
-package com.ca.account.manager.tasks.api;
+package com.ca.account.manager.tasks;
 
 import com.ca.account.manager.common.repos.IndexDatabaseRepository;
 import com.ca.account.manager.tasks.TasksConfig;
