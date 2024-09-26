@@ -1,5 +1,6 @@
 package com.ca.account.manager.common.interceptor;
 
+
 public class TenantContext {
     private static ThreadLocal<String> currentTenant = new InheritableThreadLocal<>();
 

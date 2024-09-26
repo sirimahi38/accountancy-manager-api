@@ -4,18 +4,12 @@ import org.hibernate.context.spi.CurrentTenantIdentifierResolver;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CurrentTenantIdentifierResolverImpl implements CurrentTenantIdentifierResolver {
-
-    private String defaultTenant ="public";
+public class CurrentTenantIdentifierResolverImpl implements CurrentTenantIdentifierResolver<String> {
 
     @Override
     public String resolveCurrentTenantIdentifier() {
-        String t =  TenantContext.getCurrentTenant();
-        if(t!=null){
-            return t;
-        } else {
-            return defaultTenant;
-        }
+        String defaultTenant = "public";
+        return (TenantContext.getCurrentTenant() != null) ? TenantContext.getCurrentTenant() : defaultTenant;
     }
 
     @Override
@@ -23,3 +17,4 @@ public class CurrentTenantIdentifierResolverImpl implements CurrentTenantIdentif
         return true;
     }
 }
+

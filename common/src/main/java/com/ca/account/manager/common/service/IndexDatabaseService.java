@@ -1,82 +1,54 @@
 package com.ca.account.manager.common.service;
 
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
 import com.ca.account.manager.common.repos.IndexDatabaseRepository;
+import com.ca.account.manager.common.repos.domain.IndexDatabase;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 @Component
 public class IndexDatabaseService implements ApplicationContextAware, InitializingBean {
-    private IndexDatabaseRepository indexDatabaseRepository;
+    private final IndexDatabaseRepository indexDatabaseRepository;
 
-    private HashMap<String, DataSource> dataSources = new HashMap<>();
-    private ApplicationContext applicationContext;
+    private Map<String, DataSource> dataSources = new ConcurrentHashMap<>();
 
     public IndexDatabaseService(IndexDatabaseRepository indexDatabaseRepository) {
         this.indexDatabaseRepository = indexDatabaseRepository;
     }
 
-    public List<IndexDatabase> rtrvAllIndexDatabases(){
-
-        return indexDatabaseRepository.findAll();
-    }
-
-    public Map<String, DataSource> getAll() {
-        List<IndexDatabase> configList = indexDatabaseRepository.findAll();
-        for (IndexDatabase config : configList) {
-            DataSource dataSource = getDataSource(config.getIdschema());
-            dataSources.put(config.getIdschema(), dataSource);
-        }
-        return dataSources;
-    }
-
     public DataSource getDataSource(String name) {
-        if (dataSources.get(name) != null) {
-            return dataSources.get(name);
-        }
+        if (dataSources.get(name) != null) return dataSources.get(name);
         DataSource dataSource = createDataSource(name);
-        if (dataSource != null) {
-            dataSources.put(name, dataSource);
-        }
+        if (dataSource != null) dataSources.put(name, dataSource);
         return dataSource;
     }
 
     private DataSource createDataSource(String name) {
-        Optional<IndexDatabase> config = indexDatabaseRepository.findById(name);
-        if (config != null) {
-            DataSourceBuilder factory = DataSourceBuilder
-                    .create().driverClassName(config.get().getIddriver())
-                    .username(config.get().getIdusername())
-                    .password(config.get().getIdpassword())
-                    .url(config.get().getIdurl());
-            DataSource ds = factory.build();
-            return ds;
-        }
-        return null;
+        Optional<IndexDatabase> indexDatabase = indexDatabaseRepository.findById(name);
+        return indexDatabase.map(database -> DataSourceBuilder
+                .create().driverClassName(database.getIddriver())
+                .username(database.getIdusername())
+                .password(database.getIdpassword())
+                .url(database.getIdurl()).build()).orElse(null);
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        List<IndexDatabase> configList = indexDatabaseRepository.findAll();
-        for (IndexDatabase config : configList) {
-            DataSource dataSource = getDataSource(config.getIdschema());
-            dataSources.put(config.getIdschema(), dataSource);
-        }
+        List<IndexDatabase> indexDatabaseList = indexDatabaseRepository.findAll();
+        dataSources = indexDatabaseList.stream().collect(Collectors.toConcurrentMap(IndexDatabase::getIdschema, indexDatabase -> (getDataSource(indexDatabase.getIdschema()))));
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-            this.applicationContext=applicationContext;
     }
 }

@@ -19,14 +19,12 @@ import com.ca.account.manager.common.repos.domain.IndexDatabase;
 import com.zaxxer.hikari.HikariDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.StringUtils;
 
 import javax.sql.DataSource;
 
 public final class DataSourceUtil {
 
-    private static final Logger LOG = LoggerFactory
-            .getLogger(DataSourceUtil.class);
+    private static final Logger LOG = LoggerFactory.getLogger(DataSourceUtil.class);
 
     /**
      * Utility method to create and configure a data source
@@ -37,10 +35,10 @@ public final class DataSourceUtil {
     public static DataSource createAndConfigureDataSource(
             IndexDatabase masterTenant) {
         HikariDataSource ds = new HikariDataSource();
-        ds.setUsername("postgres");
-        ds.setPassword("postgres");
-        ds.setJdbcUrl("jdbc:postgresql://localhost:5433/tenant1");
-        ds.setDriverClassName("org.postgresql.Driver");
+        ds.setUsername(masterTenant.getIdusername());
+        ds.setPassword(masterTenant.getIdpassword());
+        ds.setJdbcUrl(masterTenant.getIdurl());
+        ds.setDriverClassName(masterTenant.getIddriver());
 
         // HikariCP settings - could come from the master_tenant table but
         // hardcoded here for brevity
@@ -58,7 +56,7 @@ public final class DataSourceUtil {
         ds.setConnectionTimeout(20000);
 
         // Setting up a pool name for each tenant datasource
-        String tenantId = "tenant1";
+        String tenantId = masterTenant.getIdschema();
         String tenantConnectionPoolName = tenantId + "-connection-pool";
         ds.setPoolName(tenantConnectionPoolName);
         LOG.info("Configured datasource:" + masterTenant.getIdschema()
