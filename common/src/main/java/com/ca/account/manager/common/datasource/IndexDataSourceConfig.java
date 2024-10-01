@@ -1,7 +1,7 @@
 package com.ca.account.manager.common.datasource;
 
-import com.ca.account.manager.common.repos.IndexDatabaseRepository;
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
+import com.ca.account.manager.common.datasource.master.IndexDatabaseRepository;
+import com.ca.account.manager.common.datasource.master.IndexDatabase;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.jpa.HibernatePersistenceProvider;

@@ -1,4 +1,4 @@
-package com.ca.account.manager.common.repos.domain;
+package com.ca.account.manager.common.datasource.master;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,8 +1,7 @@
 package com.ca.account.manager.common.datasource;
 
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
-import com.ca.account.manager.common.repos.IndexDatabaseRepository;
-import com.ca.account.manager.common.utils.DataSourceUtil;
+import com.ca.account.manager.common.datasource.master.IndexDatabase;
+import com.ca.account.manager.common.datasource.master.IndexDatabaseRepository;
 import com.zaxxer.hikari.HikariDataSource;
 import org.hibernate.engine.jdbc.connections.spi.AbstractDataSourceBasedMultiTenantConnectionProviderImpl;
 import org.springframework.beans.factory.annotation.Autowired;

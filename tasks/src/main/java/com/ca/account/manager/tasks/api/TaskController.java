@@ -1,6 +1,6 @@
 package com.ca.account.manager.tasks.api;
 
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
+import com.ca.account.manager.common.datasource.master.IndexDatabase;
 import com.ca.account.manager.tasks.service.TaskService;
 import org.modelmapper.ModelMapper;
 import org.springframework.web.bind.annotation.*;
@@ -25,11 +25,6 @@ public class TaskController {
         return "first";
     }
 
-    @GetMapping
-    public List<IndexDatabase> rtrvTaskList() {
-
-        return taskService.rtrvAllTasks();
-    }
 
 
 }

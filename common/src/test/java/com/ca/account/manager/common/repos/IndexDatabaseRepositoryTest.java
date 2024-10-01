@@ -1,7 +1,7 @@
 package com.ca.account.manager.common.repos;
 
 import com.ca.account.manager.common.BaseIndexDatabaseRepositoryTest;
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
+import com.ca.account.manager.common.datasource.master.IndexDatabase;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

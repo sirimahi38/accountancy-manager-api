@@ -1,7 +1,6 @@
 package com.ca.account.manager.tasks;
 
-import com.ca.account.manager.common.repos.IndexDatabaseRepository;
-import com.ca.account.manager.tasks.TasksConfig;
+import com.ca.account.manager.common.datasource.master.IndexDatabaseRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Configuration;

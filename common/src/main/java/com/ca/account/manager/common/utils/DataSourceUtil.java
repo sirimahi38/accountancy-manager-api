@@ -15,7 +15,7 @@
  */
 package com.ca.account.manager.common.utils;
 
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
+import com.ca.account.manager.common.datasource.master.IndexDatabase;
 import com.zaxxer.hikari.HikariDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

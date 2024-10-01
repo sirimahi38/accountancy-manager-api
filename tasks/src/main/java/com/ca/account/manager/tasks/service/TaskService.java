@@ -1,8 +1,8 @@
 package com.ca.account.manager.tasks.service;
 
 
-import com.ca.account.manager.common.repos.domain.IndexDatabase;
-import com.ca.account.manager.common.repos.IndexDatabaseRepository;
+import com.ca.account.manager.common.datasource.master.IndexDatabase;
+import com.ca.account.manager.common.datasource.master.IndexDatabaseRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -15,9 +15,5 @@ public class TaskService {
         this.indexDatabaseRepository = indexDatabaseRepository;
     }
 
-    public List<IndexDatabase> rtrvAllTasks(){
-
-        return indexDatabaseRepository.findAll();
- }
 
 }
