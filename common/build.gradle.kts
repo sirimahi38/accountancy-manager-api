@@ -19,7 +19,7 @@ dependencies {
     }
 
     testImplementation("org.flywaydb:flyway-core")
-    testImplementation("org.flywaydb:flyway-database-postgresql")
+    testImplementation("org.flywaydb:flyway-database-postgresql:10.18.2")
     annotationProcessor("org.mapstruct:mapstruct-processor:1.5.3.Final")
     testImplementation("org.mapstruct:mapstruct:1.5.3.Final")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
