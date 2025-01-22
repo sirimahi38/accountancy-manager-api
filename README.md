@@ -9,7 +9,7 @@
 
 ### Running build
 
-## Clean 
+## Clean
 - Execute `gradlew clean`
 
 ## build image

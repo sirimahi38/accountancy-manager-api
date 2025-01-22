@@ -18,6 +18,10 @@ allprojects{
     }
 }
 
+tasks.named("bootBuildImage") {
+
+}
+
 sourceSets {
     create("integration-test") {
         compileClasspath += sourceSets.main.get().output

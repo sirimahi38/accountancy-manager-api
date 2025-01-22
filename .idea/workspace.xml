@@ -5,21 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb2de119-fc3c-4441-b6bd-56e682dae329" name="Changes" comment="unit testing with test containers">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repository/event/WorkflowEventLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repository/event/domain/PersistentEventLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/test/resources/db/tenant/V3__initSchema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/tasks/accountancy-manager.tasks.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing/src/main/java/com/ca/account/manager/billing/controller/BillingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing/src/main/java/com/ca/account/manager/billing/enity/Billing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing/src/main/java/com/ca/account/manager/billing/repository/BillingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing/src/main/java/com/ca/account/manager/billing/service/BillingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/billing/src/main/java/com/ca/account/manager/billing/service/BillingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/exception/ResourceNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Api_Config/Axios_config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Billing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ConactUs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navabar/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navabar/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navabar/Loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navabar/Navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navabar/Navbars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Navabar/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DataSourceBasedMultiTenantConnectionProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/DataSourceBasedMultiTenantConnectionProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/IndexDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/IndexDataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/IndexDatabaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/master/IndexDatabaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/repos/domain/IndexDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/datasource/master/IndexDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/service/IndexDatabaseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/DataSourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/ca/account/manager/common/utils/DataSourceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/BaseIndexDatabaseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/BaseDatabaseRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/IndexDatabaseRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/IndexDatabaseRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/ca/account/manager/CAAccountancyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ListTasksComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ListTasksComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/hearder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/api/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/main/java/com/ca/account/manager/tasks/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/TasksAdapterTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/TasksAdapterTestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +74,9 @@
         <task path="$PROJECT_DIR$/common">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/core">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -59,31 +93,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="accountancy-manager" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
-                <item name="common" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
-                <item name="common" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="accountancy-manager" type="f1a62948:ProjectNode" />
-                <item name="common" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -101,8 +111,29 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;indiramarupaka&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sirimahi38/accountancy-manager-api.git&quot;,
+    &quot;accountId&quot;: &quot;8322de73-955b-4354-b7e1-a5e876f8661d&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -127,62 +158,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.accountancy-manager.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [bootBuildImage].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [classes].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace:common [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Accountancy-Manager-Workspace:tasks [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Accountancy-Manager-Workspace.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build GITHUB-CODEBASE.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build accountancy-manager-api.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GITHUB-CODEBASE [bootBuildImage].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GITHUB-CODEBASE [bootJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GITHUB-CODEBASE [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GITHUB-CODEBASE [jar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.IndexDatabaseRepositoryTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.IndexDatabaseRepositoryTest.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.IndexDatabaseRepositoryTest.testFindAll.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.IndexDatabaseServiceTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.IndexDatabaseServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.IndexDatabaseServiceTest.testCreateIndexDataSourceForGivenName.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.Load Gradle Dependencies.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TaskControllerTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TaskControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TaskControllerTest.rtrvTask (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TaskControllerTest.rtrvTask.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TaskControllerTest.rtrvTaskList.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.Tests in 'accountancy-manager.common.test'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'accountancy-manager.tasks.test'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.accountancy-manager-api [bootRun].executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.accountancy-manager-api [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.accountancy-manager-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.accountancy-manager-api:tasks [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.accountancy-manager-api:tasks [testClasses].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.accountancy-manager-api:tasks [test].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/tasks/src/test/java/com/ca/account/manager/tasks&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/common/src/main/java/com/ca/account/manager/common/repository&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.09993248&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3521021&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.accountancy-manager.executor": "Run",
+    "Docker.docker-compose.yaml.keycloak: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yaml.postgresql: Compose Deployment.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Accountancy-Manager-Workspace [bootBuildImage].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace [bootRun].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace [build].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace [classes].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace [clean].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace:common [build].executor": "Run",
+    "Gradle.Accountancy-Manager-Workspace:tasks [build].executor": "Run",
+    "Gradle.Build Accountancy-Manager-Workspace.executor": "Run",
+    "Gradle.Build GITHUB-CODEBASE.executor": "Run",
+    "Gradle.Build accountancy-manager-api.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.GITHUB-CODEBASE [bootBuildImage].executor": "Run",
+    "Gradle.GITHUB-CODEBASE [bootJar].executor": "Run",
+    "Gradle.GITHUB-CODEBASE [clean].executor": "Run",
+    "Gradle.GITHUB-CODEBASE [jar].executor": "Run",
+    "Gradle.IndexDatabaseRepositoryTest (1).executor": "Run",
+    "Gradle.IndexDatabaseRepositoryTest.executor": "Run",
+    "Gradle.IndexDatabaseRepositoryTest.loadIndexDatabases.executor": "Debug",
+    "Gradle.IndexDatabaseRepositoryTest.testFindAll.executor": "Debug",
+    "Gradle.IndexDatabaseServiceTest (1).executor": "Run",
+    "Gradle.IndexDatabaseServiceTest.executor": "Run",
+    "Gradle.IndexDatabaseServiceTest.testCreateIndexDataSourceForGivenName.executor": "Run",
+    "Gradle.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration.executor": "Debug",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "Gradle.TaskControllerTest (1).executor": "Run",
+    "Gradle.TaskControllerTest.executor": "Run",
+    "Gradle.TaskControllerTest.rtrvTask (1).executor": "Run",
+    "Gradle.TaskControllerTest.rtrvTask.executor": "Run",
+    "Gradle.TaskControllerTest.rtrvTaskList.executor": "Debug",
+    "Gradle.Tests in 'accountancy-manager.common.test'.executor": "Run",
+    "Gradle.Tests in 'accountancy-manager.tasks.test'.executor": "Run",
+    "Gradle.accountancy-manager-api [bootBuildImage].executor": "Run",
+    "Gradle.accountancy-manager-api [bootRun].executor": "Debug",
+    "Gradle.accountancy-manager-api [build].executor": "Run",
+    "Gradle.accountancy-manager-api [clean].executor": "Run",
+    "Gradle.accountancy-manager-api:tasks [clean].executor": "Run",
+    "Gradle.accountancy-manager-api:tasks [testClasses].executor": "Run",
+    "Gradle.accountancy-manager-api:tasks [test].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Merging develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/tasks/src/test/java/com/ca/account/manager/tasks",
+    "last_opened_file_path": "C:/Mahesh/accountancy-managerbkp/accountancy-manager-api/common/src/main/java/com/ca/account/manager/common/repository",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.09993248",
+    "project.structure.side.proportion": "0.3521021",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ca.account.manager.common.domain" />
@@ -210,7 +252,7 @@
       <recent name="com.ca.account.manager.security" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.accountancy-manager-api [build]">
+  <component name="RunManager" selected="Gradle.accountancy-manager-api [bootBuildImage]">
     <configuration name="IndexDatabaseRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -235,7 +277,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="IndexDatabaseServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="IndexDatabaseRepositoryTest.loadIndexDatabases" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -248,7 +290,7 @@
           <list>
             <option value=":common:test" />
             <option value="--tests" />
-            <option value="&quot;com.ca.account.manager.common.service.IndexDatabaseServiceTest&quot;" />
+            <option value="&quot;com.ca.account.manager.common.repos.IndexDatabaseRepositoryTest.loadIndexDatabases&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -259,28 +301,26 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="accountancy-manager-api [bootBuildImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":common:test" />
-            <option value="--tests" />
-            <option value="&quot;com.ca.account.manager.common.service.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration&quot;" />
+            <option value="bootBuildImage" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="accountancy-manager-api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -340,6 +380,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CAAccountancyManager" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="accountancy-manager.core.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ca.account.manager.CAAccountancyManager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="accountancy-manager" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -351,21 +405,30 @@
     </configuration>
     <list>
       <item itemvalue="Docker.accountancy-manager" />
+      <item itemvalue="Gradle.IndexDatabaseRepositoryTest.loadIndexDatabases" />
+      <item itemvalue="Gradle.accountancy-manager-api [bootBuildImage]" />
       <item itemvalue="Gradle.IndexDatabaseRepositoryTest" />
-      <item itemvalue="Gradle.IndexDatabaseServiceTest" />
-      <item itemvalue="Gradle.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration" />
       <item itemvalue="Gradle.accountancy-manager-api [build]" />
       <item itemvalue="Gradle.accountancy-manager-api [clean]" />
+      <item itemvalue="Spring Boot.CAAccountancyManager" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.accountancy-manager-api [bootBuildImage]" />
         <item itemvalue="Gradle.accountancy-manager-api [build]" />
+        <item itemvalue="Gradle.IndexDatabaseRepositoryTest.loadIndexDatabases" />
         <item itemvalue="Gradle.accountancy-manager-api [clean]" />
         <item itemvalue="Gradle.IndexDatabaseRepositoryTest" />
-        <item itemvalue="Gradle.IndexDatabaseServiceTest" />
-        <item itemvalue="Gradle.IndexDatabaseServiceTest.testGetIndexDataSourceConfiguration" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -375,6 +438,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708779616753</updated>
+      <workItem from="1737215899780" duration="2926000" />
+      <workItem from="1737309692085" duration="4732000" />
+      <workItem from="1737397561311" duration="4232000" />
     </task>
     <task id="LOCAL-00001" summary="database call integrated">
       <option name="closed" value="true" />
@@ -491,6 +557,9 @@
     <option name="localTasksCounter" value="15" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -516,19 +585,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tasks/src/test/java/com/ca/account/manager/tasks/api/TaskControllerTest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/3.2.2/81d9eb6e5c17436ab7539565312405efd0c86f34/spring-boot-autoconfigure-3.2.2-sources.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.java</url>
           <line>122</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/repos/IndexDatabaseRepositoryTest.java</url>
-          <line>23</line>
+          <line>4</line>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/BaseDatabaseRepositoryTest.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/test/java/com/ca/account/manager/common/BaseDatabaseRepositoryTest.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/common/src/test/java/db/migration/V2__INDEX_DATABASE.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

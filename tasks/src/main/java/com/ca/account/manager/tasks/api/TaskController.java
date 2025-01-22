@@ -1,12 +1,15 @@
 package com.ca.account.manager.tasks.api;
 
-import com.ca.account.manager.common.datasource.master.IndexDatabase;
+import com.ca.account.manager.common.domain.EmployeeTask;
+import com.ca.account.manager.tasks.dto.EmployeeTaskDto;
 import com.ca.account.manager.tasks.service.TaskService;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/tasks")
 public class TaskController {
@@ -19,11 +22,32 @@ public class TaskController {
         this.modelMapper = modelMapper;
     }
 
-    @GetMapping("first")
-    public String rtrvMe() {
+    @GetMapping("/employeeTasks")
+    public List<EmployeeTask> rtrvTaskList() {
 
-        return "first";
+        return taskService.rtrvAllTasks();
     }
+
+    @GetMapping("{taskId}")
+    public EmployeeTaskDto rtrvTask(@PathVariable Long taskId) {
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);
+        return  modelMapper.map(taskService.rtrvTask(taskId).get(), EmployeeTaskDto.class);
+    }
+
+
+    @PostMapping("create")
+    public void createTask(@RequestBody EmployeeTaskDto employeeTaskDto) {
+        modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);
+        taskService.createTask(modelMapper.map(employeeTaskDto, EmployeeTask.class));
+    }
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value="name", defaultValue = "Accounts Management") String name){
+        return String.format( name);
+    }
+
+
+
+
 
 
 

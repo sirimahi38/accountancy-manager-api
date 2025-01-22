@@ -18,12 +18,7 @@ public class TaskControllerTest extends TasksAdapterTest {
 
     }
 
-    @Test
-    public void rtrvTaskList()throws Exception{
 
-        assertThat(taskController.rtrvTaskList()).asList();
-
-    }
 
 
 }

@@ -1,18 +1,44 @@
-import logo from './logo.svg';
+
 import './App.css';
-import ListTasksComponent from './components/ListTasksComponent'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navabar/Navbars";
+import ListTasksComponent from "./components/ListTasksComponent";
+import ContactUs from './components/ConactUs';
+import Billing from "./components/Billing";
+import HomePage from "./components/HomePage";
+
+
 
 function App() {
-  return (
-    <div>
+    return (
+        <>
 
-        <p>
-          <h1>Accountancy Manager</h1>
-          <ListTasksComponent/>
-        </p>
+        <header>
+            <div className="">
+                <Navbar/>
 
-    </div>
-  );
+                <Router>
+
+
+                    <main className="main-content">
+                        <Routes>
+                            <Route path="/" element={<HomePage/>}/>
+                            <Route path="/ListTasksComponent" element={<ListTasksComponent/>}/>
+                            <Route path="/ContactUs" element={<ContactUs/>}/>
+                            <Route path="/Billing" element={<Billing/>}/>
+                            <Route path="/HomePage" element={<HomePage/>}/>
+
+                        </Routes>
+                    </main>
+
+
+
+        </Router>
+            </div>
+        </header>
+
+            </>
+    )
 }
 
 export default App;
